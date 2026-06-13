@@ -1,0 +1,78 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit:
+    name: Unit tests (pure-Python)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Pytest
+        run: PYTHONPATH=. pytest tests/test_bundle.py -v
+
+  conformance:
+    name: Conformance corpus (E2E vs reference server)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: aimem
+          POSTGRES_PASSWORD: aimem
+          POSTGRES_DB: aimem
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U aimem"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Pre-install pg extensions
+        env:
+          PGPASSWORD: aimem
+        run: |
+          psql -h localhost -U aimem -d aimem \
+            -c "CREATE EXTENSION IF NOT EXISTS vector; CREATE EXTENSION IF NOT EXISTS pg_trgm;"
+      - name: Start reference server
+        env:
+          DATABASE_URL: postgresql://aimem:aimem@localhost:5432/aimem
+          AIMEM_ADMIN_SECRET: ci-only-secret
+          AIMEM_PRODUCER: aimem-ci
+        run: |
+          PYTHONPATH=. uvicorn server.main:app --host 127.0.0.1 --port 9420 &
+          for i in {1..20}; do
+            curl -sS http://127.0.0.1:9420/healthz && break
+            sleep 0.5
+          done
+      - name: Provision tenant
+        id: provision
+        run: |
+          PROV=$(curl -sS -X POST http://127.0.0.1:9420/v1/admin/provision \
+            -H "X-Admin-Secret: ci-only-secret" \
+            -H "Content-Type: application/json" \
+            -d '{"name":"ci"}')
+          KEY=$(echo "$PROV" | python -c "import json,sys; print(json.load(sys.stdin)['api_key'])")
+          echo "api_key=$KEY" >> $GITHUB_OUTPUT
+      - name: Run conformance corpus
+        run: |
+          python tests/conformance/conformance.py run \
+            http://127.0.0.1:9420 ${{ steps.provision.outputs.api_key }}

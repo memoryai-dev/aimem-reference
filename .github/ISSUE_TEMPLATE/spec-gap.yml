@@ -1,0 +1,25 @@
+name: Spec gap
+description: A normative requirement is missing, ambiguous, or contradictory in the AIMEM Bundle spec.
+labels: ["spec-gap"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Spec section
+      description: Which section number? (e.g. "§3.2 ChunkRecord")
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: The gap
+      description: What is unspecified, ambiguous, or wrong? Be specific — propose wording when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Implementation impact
+      description: How did this affect your implementation? Did you make a guess that another implementer might guess differently?
+    validations:
+      required: true

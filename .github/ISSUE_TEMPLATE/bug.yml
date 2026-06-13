@@ -1,0 +1,32 @@
+name: Bug report
+description: Something doesn't conform to the spec or behaves wrong.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproducer
+      description: Smallest bundle JSON, curl command, or pytest snippet that triggers the issue.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect (and which spec section codifies that)?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Commit hash or tag.
+    validations:
+      required: true

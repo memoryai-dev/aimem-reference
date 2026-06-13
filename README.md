@@ -37,7 +37,7 @@ implementers.
 ## Quick start (Docker)
 
 ```bash
-git clone https://github.com/aimem-protocol/aimem-reference
+git clone https://github.com/memoryai-dev/aimem-reference
 cd aimem-reference
 cp .env.example .env
 # Edit .env: pick AIMEM_ADMIN_SECRET = output of `openssl rand -hex 32`

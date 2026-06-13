@@ -56,8 +56,8 @@ CREATE INDEX IF NOT EXISTS idx_api_keys_hash ON api_keys(key_hash) WHERE revoked
 -- ─── Chunks ─────────────────────────────────────────────────────────────
 -- Atomic memory record (draft §3.2 ChunkRecord).
 -- The set of columns matches exactly the normative ChunkRecord fields;
--- implementers MAY add columns for their own reasoning layer but those
--- additions MUST NOT appear in exported Bundles.
+-- implementers MAY add columns for fields outside the spec scope, but
+-- those additions MUST NOT appear in exported Bundles.
 CREATE TABLE IF NOT EXISTS chunks (
     -- Local serial id used for foreign keys inside the implementation.
     -- The exported URN id is computed at export time as

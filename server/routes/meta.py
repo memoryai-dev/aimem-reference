@@ -20,7 +20,7 @@ async def spec_discovery():
         "format": BUNDLE_FORMAT,
         "version": BUNDLE_VERSION,
         "draft": "draft-vu-aimem-bundle-01",
-        "spec_url": "https://github.com/aimem-protocol/aimem-reference/blob/main/spec/draft-vu-aimem-bundle-01.md",
+        "spec_url": "https://github.com/memoryai-dev/aimem-reference/blob/main/spec/draft-vu-aimem-bundle-01.md",
         "endpoints": {
             "export": "GET /v1/brain/export",
             "export_stream": "GET /v1/brain/export/stream",

@@ -1,0 +1,49 @@
+name: 2nd implementation registration
+description: Register an independent Consumer or Producer of AIMEM Bundle Format.
+labels: ["2nd-implementer"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Implementation name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Source URL
+      description: GitHub or GitLab link to the implementation.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Conformance level
+      options:
+        - "Level 1 — Producer only"
+        - "Level 2 — Consumer only"
+        - "Level 3 — Bidirectional"
+    validations:
+      required: true
+  - type: textarea
+    id: corpus
+    attributes:
+      label: Conformance corpus result
+      description: Output of `python tests/conformance/conformance.py run <your-base-url> <api-key>`.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: gaps
+    attributes:
+      label: Spec gaps encountered
+      description: Anything in draft-vu-aimem-bundle that needed clarification.
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (for potential -02 co-authorship)
+      description: Email if you want to be credited or invited as a co-author of the next draft revision.
+    validations:
+      required: false
