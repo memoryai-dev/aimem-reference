@@ -1,0 +1,24 @@
+{
+  "checksum": "sha256:80b4afd454c86c05a14b30fbae8448102efd6aa6fc6086c00ec7b62485a4e925",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "Pinned forever.",
+      "content_hash": "sha256:6ed513078d4132cf16a19098a65ff7cd3e80cb475251acc0f96da4500e4a95b9",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:p1",
+      "is_pinned": true,
+      "memory_type": "fact",
+      "tags": [],
+      "zone": "critical"
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

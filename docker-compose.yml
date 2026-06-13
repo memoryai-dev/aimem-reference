@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: aimem
+      POSTGRES_PASSWORD: aimem
+      POSTGRES_DB: aimem
+    volumes:
+      - aimem_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aimem"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://aimem:aimem@postgres:5432/aimem
+      AIMEM_PRODUCER: ${AIMEM_PRODUCER:-aimem-reference}
+      AIMEM_ADMIN_SECRET: ${AIMEM_ADMIN_SECRET:-changeme-replace-this}
+      AIMEM_POOL_MIN: "2"
+      AIMEM_POOL_MAX: "10"
+    ports:
+      - "9420:9420"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  aimem_pg:

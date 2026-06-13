@@ -1,0 +1,26 @@
+{
+  "checksum": "sha256:583f1cf960b3ae26847bea5ff04b1fcc1ed5e5d848c01d0c1a5f9ccae6d19e73",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "with embedding",
+      "content_hash": "sha256:094d10379a37ed44702a93604f0ff3ad28faa07891fedaf70debf3cf379646e6",
+      "created_at": "2026-04-01T09:00:00Z",
+      "embedding": "zczMPc3MTD6amZm+zczMPg==",
+      "id": "urn:aimem:conformance-test:emb1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    }
+  ],
+  "edges": [],
+  "embedding_dim": 4,
+  "embedding_model": "conformance-fake-v1",
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

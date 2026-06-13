@@ -1,0 +1,64 @@
+{
+  "checksum": "sha256:d34443e5f994401c382ecd3df382c02479adcc6709d08bc103bcf1217719dea5",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "DNA preference.",
+      "content_hash": "sha256:955b10045d12454bbec0799a2fea1a75ac7fbe2238637e68e2db6d2fe9e0cae7",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:d0",
+      "is_pinned": false,
+      "memory_type": "preference",
+      "tags": [],
+      "zone": "critical"
+    },
+    {
+      "content": "DNA decision.",
+      "content_hash": "sha256:e6422ee48342a63c455272316052591288a8b2276db5f961f655692dad74f902",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:d1",
+      "is_pinned": false,
+      "memory_type": "decision",
+      "tags": [],
+      "zone": "critical"
+    },
+    {
+      "content": "DNA identity.",
+      "content_hash": "sha256:23ef24099d5e57a748071125d2075ce9b5d97f1701ee095f7093170a573f9cd2",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:d2",
+      "is_pinned": false,
+      "memory_type": "identity",
+      "tags": [],
+      "zone": "critical"
+    },
+    {
+      "content": "DNA pitfall.",
+      "content_hash": "sha256:20367cd203ce990dbd926706f40a2741616c7c612bdc2d39bfc4f260b5b84203",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:d3",
+      "is_pinned": false,
+      "memory_type": "pitfall",
+      "tags": [],
+      "zone": "critical"
+    },
+    {
+      "content": "DNA procedure.",
+      "content_hash": "sha256:cf1bed74979af72c7c6cfff2dd6e7de9eaee272953823424bbfb0274a82d9a85",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:d4",
+      "is_pinned": false,
+      "memory_type": "procedure",
+      "tags": [],
+      "zone": "critical"
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "DNA_ONLY",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

@@ -1,0 +1,18 @@
+aimem-reference
+Copyright 2026 MemoryAI Contributors
+
+This product includes software developed by the MemoryAI Project
+(https://memoryai.dev/).
+
+This is a reference implementation of the AIMEM Bundle Format
+specified in draft-vu-aimem-bundle (IETF Independent Submission).
+
+The reference implementation is intentionally minimal — it implements
+only the encoding and transport layers defined by the specification.
+The reasoning layer (recall ranking, sleep cycles, neural graph
+reasoning, etc.) is intentionally NOT included; production implementers
+are expected to provide their own reasoning layer behind the same
+Bundle interface.
+
+For a production implementation with full reasoning capabilities,
+see https://memoryai.dev/.

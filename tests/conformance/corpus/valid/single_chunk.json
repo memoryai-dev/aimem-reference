@@ -1,0 +1,23 @@
+{
+  "checksum": "sha256:95f9057f2c4aeecaf1e68ea4fc8f1b78728cae8efa546d10b88fe8c6b882741b",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "Hello world.",
+      "content_hash": "sha256:aa3ec16e6acc809d8b2818662276256abfd2f1b441cb51574933f3d4bd115d11",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:c1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

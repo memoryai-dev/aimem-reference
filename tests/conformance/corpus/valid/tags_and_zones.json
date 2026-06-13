@@ -1,0 +1,28 @@
+{
+  "checksum": "sha256:58d3149696b10d217e5a07a9e8795768efe1b96ef6600ec1255bdc1a084e2f89",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "Tagged and zoned.",
+      "content_hash": "sha256:3862c315c02e9eb85f0d1bde096d02123e41da06958c882bad37f9e6da627584",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:t1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": [
+        "a",
+        "b",
+        "c"
+      ],
+      "zone": "important"
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

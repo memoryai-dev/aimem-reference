@@ -1,0 +1,24 @@
+{
+  "checksum": "sha256:fbb3407b7a5dd9a8b02fb33b73115f58402e206fd957bb12f178578ceff8c7cc",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "After cutoff.",
+      "content_hash": "sha256:6ad74e09dcb6dcc814c929a6771e8eed22175266ca406aec4ac5cb328fa2744e",
+      "created_at": "2026-04-15T00:00:00Z",
+      "id": "urn:aimem:conformance-test:s1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "SINCE",
+  "since": "2026-04-01T00:00:00Z",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

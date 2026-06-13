@@ -1,0 +1,23 @@
+{
+  "checksum": "sha256:6703a1c73ec25f5a600d0f42c3fc723446c87d72adc8d4f3b380a4a226cf5059",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "Cha g\u1ecdi tao l\u00e0 'm\u00e0y' \ud83e\udd16 \u4e2d\u6587\u6d4b\u8bd5 \u00f1 \u00e9 \u00fc",
+      "content_hash": "sha256:a32f9a0b5b8d2257fb4ec5acffc02038ef22db609727f675e6984f39e30edf87",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:u1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    }
+  ],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

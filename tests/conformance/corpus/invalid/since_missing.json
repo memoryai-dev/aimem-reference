@@ -1,0 +1,13 @@
+{
+  "checksum": "sha256:524b01604aefc4a9708014bef3ea779871aa3e995c33660f1ef52761b22e2509",
+  "chunk_entities": [],
+  "chunks": [],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "SINCE",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

@@ -1,0 +1,13 @@
+{
+  "checksum": "sha256:c936ca1648594e67e7ed9b9e6959db5a06369fe6c2e9ff91d743c18b024e91a3",
+  "chunk_entities": [],
+  "chunks": [],
+  "edges": [],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "memoryai-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}

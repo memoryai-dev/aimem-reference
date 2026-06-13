@@ -1,0 +1,40 @@
+{
+  "checksum": "sha256:6c29b2cdcd61f596c6f3a48011f7e5224426c22281da3f3839e2f02805c68332",
+  "chunk_entities": [],
+  "chunks": [
+    {
+      "content": "a",
+      "content_hash": "sha256:ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:bw1",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    },
+    {
+      "content": "b",
+      "content_hash": "sha256:3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+      "created_at": "2026-04-01T09:00:00Z",
+      "id": "urn:aimem:conformance-test:bw2",
+      "is_pinned": false,
+      "memory_type": "fact",
+      "tags": []
+    }
+  ],
+  "edges": [
+    {
+      "created_at": "2026-04-15T08:00:00Z",
+      "edge_type": "hebbian",
+      "source_id": "urn:aimem:conformance-test:bw1",
+      "target_id": "urn:aimem:conformance-test:bw2",
+      "weight": 1.5
+    }
+  ],
+  "entities": [],
+  "exported_at": "2026-06-13T15:00:00Z",
+  "format": "aimem-bundle",
+  "producer": "conformance-test",
+  "scope": "FULL",
+  "tenant_id": "11111111-1111-1111-1111-111111111111",
+  "version": "1"
+}
