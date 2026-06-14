@@ -10,7 +10,7 @@ Initial public release.
 ### Added
 
 - Reference Producer + Consumer for the AIMEM Bundle Format,
-  draft-vu-aimem-bundle-01.
+  draft-vu-aimem-bundle-00.
 - FastAPI HTTP profile (export, export/stream, import) with Bearer
   auth and PostgreSQL row-level security.
 - Pure-Python `server/bundle/` library: schema dataclasses, RFC 8785

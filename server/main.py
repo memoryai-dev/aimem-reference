@@ -1,6 +1,6 @@
 """aimem-reference FastAPI app.
 
-Reference implementation of draft-vu-aimem-bundle-01.
+Reference implementation of draft-vu-aimem-bundle-00.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ app = FastAPI(
     version="0.1.0",
     description=(
         "Reference Producer/Consumer for the AIMEM Bundle Format "
-        "(draft-vu-aimem-bundle-01). Apache-2.0."
+        "(draft-vu-aimem-bundle-00). Apache-2.0."
     ),
 )
 

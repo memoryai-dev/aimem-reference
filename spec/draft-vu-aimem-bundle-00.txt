@@ -9,7 +9,7 @@ Expires: 16 December 2026
 
 
              Memory Interchange Bundle Format for AI Agents
-                        draft-vu-aimem-bundle-01
+                        draft-vu-aimem-bundle-00
 
 Abstract
 
@@ -100,9 +100,9 @@ Table of Contents
    8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  12
      8.1.  Normative References  . . . . . . . . . . . . . . . . . .  12
      8.2.  Informative References  . . . . . . . . . . . . . . . . .  13
-   Appendix A.  Changes from draft-00  . . . . . . . . . . . . . . .  13
-   Appendix B.  Acknowledgments  . . . . . . . . . . . . . . . . . .  14
+   Appendix A.  Acknowledgments  . . . . . . . . . . . . . . . . . .  13
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  14
+
 
 
 
@@ -716,11 +716,11 @@ Internet-Draft                AIMEM Bundle                     June 2026
    [W3C-DID]  Group, W. D. W., "Decentralized Identifiers (DIDs) v1.0",
               July 2022, <https://www.w3.org/TR/did-core/>.
 
-Appendix A.  Changes from draft-00
+Appendix A.  Acknowledgments
 
-   *  Added producer envelope field and the urn:aimem: namespace scheme
-      for chunk identifiers.
-
+   The author thanks the early implementers of the AIMEM Bundle Format
+   for feedback on the conformance level structure and the embedding
+   interop gap that motivated the embedding_model envelope field.
 
 
 
@@ -730,35 +730,35 @@ Minh                    Expires 16 December 2026               [Page 13]
 Internet-Draft                AIMEM Bundle                     June 2026
 
 
-   *  Inlined edge, entity, and chunk-entity record schemas (previously
-      delegated to an external CC-BY document, which is not a normative
-      reference acceptable to IETF).
-
-   *  Added embedding_model envelope field; clarified that Consumers
-      MUST NOT silently re-embed under a different model.
-
-   *  Replaced the "out-of-band v1" signature mechanism with detached
-      COSE_Sign1 over the JSON-canonicalised body.
-
-   *  Required JSON Canonicalization Scheme (RFC 8785) for checksum,
-      replacing prose-defined "sorted keys" canonicalisation.
-
-   *  Added chunk_entities link record.
-
-   *  Added embedding privacy guidance in Section 5.
-
-Appendix B.  Acknowledgments
-
-   The author thanks the early implementers of draft-00 for feedback on
-   the conformance level structure and the embedding interop gap that
-   motivated embedding_model.
-
 Author's Address
 
    Vu Duc Minh
    MemoryAI
    Vietnam
    Email: founder@memoryai.vn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

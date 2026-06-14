@@ -1,4 +1,4 @@
-"""AIMEM Bundle schema — dataclasses + validation per draft-vu-aimem-bundle-01.
+"""AIMEM Bundle schema — dataclasses + validation per draft-vu-aimem-bundle-00.
 
 Pure-Python, no DB dependencies. Used by both exporter (build) and
 importer (validate).

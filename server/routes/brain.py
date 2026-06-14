@@ -1,6 +1,6 @@
 """Bundle export/import HTTP routes.
 
-Implements the HTTP Profile in draft-vu-aimem-bundle-01 §4.
+Implements the HTTP Profile in draft-vu-aimem-bundle-00 §4.
 """
 from __future__ import annotations
 

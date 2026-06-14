@@ -5,7 +5,7 @@
 # Output: draft-vu-aimem-bundle-NN.{xml,txt} ready for datatracker submit.
 set -e
 cd "$(dirname "$0")"
-SRC="${1:-draft-vu-aimem-bundle-01.md}"
+SRC="${1:-draft-vu-aimem-bundle-00.md}"
 BASE="${SRC%.md}"
 echo "==> kramdown-rfc → ${BASE}.xml"
 kramdown-rfc "$SRC" > "${BASE}.xml" 2>/tmp/kramdown-rfc.err

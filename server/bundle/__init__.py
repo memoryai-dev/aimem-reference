@@ -1,6 +1,6 @@
 """AIMEM Bundle reference implementation.
 
-This package implements draft-vu-aimem-bundle-01:
+This package implements draft-vu-aimem-bundle-00:
   - schema.py    — Bundle/Chunk/Edge/Entity dataclasses + validation
   - canonical.py — RFC 8785 canonical JSON for checksum
   - exporter.py  — DB rows → Bundle (Producer)

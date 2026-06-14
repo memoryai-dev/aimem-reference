@@ -1,7 +1,7 @@
 ---
 title: "Memory Interchange Bundle Format for AI Agents"
 abbrev: "AIMEM Bundle"
-docname: draft-vu-aimem-bundle-01
+docname: draft-vu-aimem-bundle-00
 category: info
 stream: independent
 ipr: trust200902
@@ -522,24 +522,8 @@ MUST reject a v2 Bundle with a 422 response.
 
 --- back
 
-# Changes from draft-00
-
-- Added `producer` envelope field and the `urn:aimem:` namespace
-  scheme for chunk identifiers.
-- Inlined edge, entity, and chunk-entity record schemas (previously
-  delegated to an external CC-BY document, which is not a normative
-  reference acceptable to IETF).
-- Added `embedding_model` envelope field; clarified that Consumers
-  MUST NOT silently re-embed under a different model.
-- Replaced the "out-of-band v1" signature mechanism with detached
-  COSE_Sign1 over the JSON-canonicalised body.
-- Required JSON Canonicalization Scheme (RFC 8785) for checksum,
-  replacing prose-defined "sorted keys" canonicalisation.
-- Added `chunk_entities` link record.
-- Added embedding privacy guidance in {{security}}.
-
 # Acknowledgments
 
-The author thanks the early implementers of `draft-00` for feedback on
-the conformance level structure and the embedding interop gap that
-motivated `embedding_model`.
+The author thanks the early implementers of the AIMEM Bundle Format
+for feedback on the conformance level structure and the embedding
+interop gap that motivated the `embedding_model` envelope field.

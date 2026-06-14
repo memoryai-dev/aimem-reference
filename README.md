@@ -4,7 +4,7 @@
 a vendor-neutral interchange format for AI agent memory.
 
 This server is the *reference* Producer + Consumer cited in
-[`draft-vu-aimem-bundle-01`](spec/draft-vu-aimem-bundle-01.md), an
+[`draft-vu-aimem-bundle-00`](spec/draft-vu-aimem-bundle-00.md), an
 IETF Independent Submission. It is intentionally minimal: it
 implements only the **encoding and transport** layers defined by the
 specification. The **reasoning layer** (recall ranking, sleep cycles,
@@ -117,7 +117,7 @@ server/
     └── admin.py             # /v1/admin/provision
 
 spec/
-└── draft-vu-aimem-bundle-01.md   # the specification
+└── draft-vu-aimem-bundle-00.md   # the specification
 
 tests/
 ├── test_bundle.py           # 26 pure-python unit tests

@@ -2,7 +2,7 @@
 
 Thanks for considering a contribution. This repository is the **reference
 implementation** of the AIMEM Bundle Format
-([draft-vu-aimem-bundle-01](spec/draft-vu-aimem-bundle-01.md)). Its
+([draft-vu-aimem-bundle-00](spec/draft-vu-aimem-bundle-00.md)). Its
 purpose is twofold:
 
 1. Show implementers what conformance looks like in code.
