@@ -2,7 +2,8 @@
 title: "Memory Interchange Bundle Format for AI Agents"
 abbrev: "AIMEM Bundle"
 docname: draft-vu-aimem-bundle-01
-category: std
+category: info
+stream: independent
 ipr: trust200902
 area: Applications
 workgroup: Independent Submission
@@ -105,7 +106,7 @@ browsers.
 
 {::boilerplate bcp14-tagged}
 
-## Terminology
+## Terminology {#terminology}
 
 Bundle:
 : A self-contained JSON document representing the complete or partial
@@ -139,7 +140,7 @@ Producer Namespace:
   uniquely identifies the originating Producer instance. See
   {{chunk-id}}.
 
-# Bundle Format
+# Bundle Format {#bundle-format}
 
 A Bundle is a UTF-8 JSON document conforming to {{RFC8259}}.
 
@@ -277,7 +278,7 @@ the following normative fields:
 The `edge_type` field MUST be one of `hebbian`, `semantic`, `temporal`,
 `causal`, or an implementation-defined value prefixed with `x-`.
 
-The `weight` field MUST be a number in the closed interval [0.0, 1.0].
+The `weight` field MUST be a number in the closed interval `[0.0, 1.0]`.
 
 Both `source_id` and `target_id` MUST reference `id` values present in
 the same Bundle's `chunks` array, or the Consumer MUST reject the
@@ -402,7 +403,7 @@ A Producer (Level 1) MUST emit a Bundle that round-trips through itself
 when re-imported, in conformance with {{idempotency}}.
 
 A Consumer (Level 2) MUST ingest any Bundle that conforms to
-{{Bundle Format}}.
+{{bundle-format}}.
 
 A Bidirectional implementation (Level 3) MUST satisfy both, AND a
 Bundle exported from such an implementation MUST be importable into
@@ -416,7 +417,7 @@ informative reference implementation cited in {{AIMEM-REF}}.
 ## DNA-class invariant
 
 Implementations MUST NOT silently decay, delete, or supersede DNA-class
-Chunks (see {{Terminology}}) during background processing. Explicit
+Chunks (see {{terminology}}) during background processing. Explicit
 user-initiated deletion MUST be honoured (see {{erasure}}); implicit
 decay MUST NOT.
 
