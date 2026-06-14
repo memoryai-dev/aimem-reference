@@ -1,11 +1,14 @@
 # aimem-reference
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![IETF Draft](https://img.shields.io/badge/IETF-draft--vu--aimem--bundle--00-blue)](https://datatracker.ietf.org/doc/draft-vu-aimem-bundle/)
+
 **Reference implementation of the AIMEM Bundle Format** —
 a vendor-neutral interchange format for AI agent memory.
 
 This server is the *reference* Producer + Consumer cited in
-[`draft-vu-aimem-bundle-00`](spec/draft-vu-aimem-bundle-00.md), an
-IETF Independent Submission. It is intentionally minimal: it
+[`draft-vu-aimem-bundle-00`](https://datatracker.ietf.org/doc/draft-vu-aimem-bundle/),
+an IETF Independent Submission. It is intentionally minimal: it
 implements only the **encoding and transport** layers defined by the
 specification. The **reasoning layer** (recall ranking, sleep cycles,
 neural graphs, etc.) is **out of scope** and left to production
@@ -15,6 +18,13 @@ implementers.
 > If you need real recall quality, run a production server like
 > [MemoryAI](https://memoryai.dev/) and use this repo as the
 > wire-compatibility test suite.
+
+## Spec
+
+- **IETF datatracker:** https://datatracker.ietf.org/doc/draft-vu-aimem-bundle/
+- **HTML render:** https://datatracker.ietf.org/doc/html/draft-vu-aimem-bundle
+- **TXT canonical:** https://www.ietf.org/archive/id/draft-vu-aimem-bundle-00.txt
+- **Local source:** [spec/draft-vu-aimem-bundle-00.md](spec/draft-vu-aimem-bundle-00.md)
 
 ## What this gives you
 

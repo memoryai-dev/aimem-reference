@@ -3,9 +3,10 @@
 All notable changes to `aimem-reference` are documented here. Format:
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) — semver.
 
-## [0.1.0] — 2026-06-13
+## [0.1.0] — 2026-06-14
 
-Initial public release.
+Initial public release. **IETF Independent Submission posted
+2026-06-14**: [draft-vu-aimem-bundle-00](https://datatracker.ietf.org/doc/draft-vu-aimem-bundle/).
 
 ### Added
 
