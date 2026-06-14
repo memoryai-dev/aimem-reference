@@ -634,7 +634,7 @@ Additional information:
   File extension(s): .aimem.json
   Macintosh file type code: TEXT
 Person & email address to contact:
-  Vu Duc Minh <minh@memoryai.dev>
+  Vu Duc Minh <founder@memoryai.vn>
 Intended usage: COMMON
 Author: Vu Duc Minh
 Change controller: IETF (after publication)
@@ -758,7 +758,7 @@ Author's Address
    Vu Duc Minh
    MemoryAI
    Vietnam
-   Email: minh@memoryai.dev
+   Email: founder@memoryai.vn
 
 
 

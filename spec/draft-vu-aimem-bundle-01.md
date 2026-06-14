@@ -24,7 +24,7 @@ author:
  -
     fullname: Vu Duc Minh
     organization: MemoryAI
-    email: minh@memoryai.dev
+    email: founder@memoryai.vn
     country: Vietnam
 
 normative:
@@ -507,7 +507,7 @@ Additional information:
   File extension(s): .aimem.json
   Macintosh file type code: TEXT
 Person & email address to contact:
-  Vu Duc Minh <minh@memoryai.dev>
+  Vu Duc Minh <founder@memoryai.vn>
 Intended usage: COMMON
 Author: Vu Duc Minh
 Change controller: IETF (after publication)

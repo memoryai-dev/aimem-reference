@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Email **minh@memoryai.dev** with the subject prefix `[aimem-reference
+Email **founder@memoryai.vn** with the subject prefix `[aimem-reference
 security]`. Encrypt with our PGP key if the issue concerns
 authentication, RLS, or signature verification:
 

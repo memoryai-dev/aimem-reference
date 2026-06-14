@@ -44,7 +44,7 @@ individual is officially representing the project in public spaces.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behaviour may be
-reported to the project maintainers at minh@memoryai.dev. All complaints
+reported to the project maintainers at founder@memoryai.vn. All complaints
 will be reviewed and investigated promptly and fairly.
 
 ## Attribution
